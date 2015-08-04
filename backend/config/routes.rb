@@ -40,6 +40,8 @@ Rails.application.routes.draw do
   #     end
   #   end
 
+  resources :jokes, only: [:show, :index, :create, :update]
+  resources :comments, only: [:create, :delete]
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'
