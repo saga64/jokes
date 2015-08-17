@@ -27,6 +27,7 @@ gem 'bcrypt', '~> 3.1.5'
 gem 'active_model_serializers'
 gem 'virtus'
 gem 'simple_form'
+gem 'slim-rails'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

@@ -4,6 +4,6 @@ RSpec.configure do |config|
   end
 
   config.before(:all) do
-    Rails.cache.clear
+    #Rails.cache.clear
   end
 end
