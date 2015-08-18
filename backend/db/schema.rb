@@ -34,15 +34,15 @@ ActiveRecord::Schema.define(version: 20150611080434) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string   "username",               null: false
-    t.string   "password",               null: false
+    t.string   "username",                    null: false
+    t.string   "password_digest",             null: false
     t.datetime "last_login"
     t.string   "email"
-    t.integer  "gender",     default: 0, null: false
+    t.integer  "gender",          default: 0, null: false
     t.string   "avatar"
-    t.integer  "thumbs",     default: 0, null: false
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.integer  "thumbs",          default: 0, null: false
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
   end
 
 end
