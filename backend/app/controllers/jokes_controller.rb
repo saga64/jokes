@@ -4,7 +4,7 @@ class JokesController < ApplicationController
 
     respond_to do |format|
       format.html
-      format.json { render json: @jokes, serializer: JokeSerializer }
+      format.json { render json: @jokes }
     end
   end
 
